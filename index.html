@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Christmas Pong </title>
+ <style>
+ #canvas {
+            margin: auto;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url("santa.gif");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+	</style>
+	<link rel="shortcut icon" href="tree.ico" />
+	<link rel="stylesheet" type="text/css" href="Game.css">
+</head>
+<body>
+<audio id="audiotag1" src="song.mp3" preload="auto"></audio>
+<canvas id="canvas" width="1350" height="635"> </canvas>
+<script src="pongGame.js">
+	function play_single_sound() {
+		document.getElementById('audiotag1').play();
+	}
+</script>
+</body>
+</html>
